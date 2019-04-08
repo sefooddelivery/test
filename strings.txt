@@ -1,0 +1,45 @@
+
+
+function checkNucleotides(sequence) {
+				
+    
+  console.log(sequence);
+  
+  var rna = ['A','G','C','U'];
+  
+  for( var i = 0; i<sequence.length; i++ )
+    {
+       if( rna.indexOf(sequence[i]) == -1) 
+         {
+           return "There is an invalid letter: " + sequence[i] + "." + " At position: " + (i+1)
+         }
+    }
+      return ("Valid Sequence: " + sequence);
+    
+    
+}
+
+
+//function recieves a sequence of DNA as input
+//requirement is for there to not be any instances of a char that does not belong
+//thus dna sequences is the sample size that might contains constraints to be checked for
+//the checker is a perfect example, check if perfectexample.indexOf() == -1 so check not perfect
+
+
+function DNAtoRNA(dna){
+  return dna.replace(/T/g, 'U');
+}
+
+
+function DNAtoRNA(dna) {
+ 
+ console.log(dna.split("T").join("U"));
+
+  //.join("U");
+}
+
+DNAtoRNA("TTTT");
+}
+
+
+
